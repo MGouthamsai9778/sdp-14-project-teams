@@ -1,0 +1,27 @@
+{
+  "name": "lms-fullstack",
+  "version": "1.0.0",
+  "description": "Complete Learning Management System - Full Stack Project",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ..",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "LMS",
+    "Learning Management System",
+    "Full Stack",
+    "React",
+    "Express",
+    "Node.js"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.0.0"
+  },
+  "devDependencies": {}
+}
